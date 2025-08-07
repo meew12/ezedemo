@@ -1,0 +1,30 @@
+/*
+Theme Name: Xports Academy Child
+Template: hello-elementor
+Author: Xports Academy
+Description: Tema hijo de Hello Elementor para Xports Academy
+Version: 1.0
+*/
+
+/* Importa los estilos del tema padre */
+@import url("style_2.css");
+
+.woocommerce-NoticeGroup, .woocommerce-message, .woocommerce-info, .woocommerce-error {
+    background-color: #000000 !important; /* Fondo negro */
+    border: none !important; /* Elimina cualquier borde */
+    color: #c1ff72 !important; /* Texto en verde claro */
+    padding: 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: none !important; /* Asegura que no haya sombras */
+}
+
+/* Estilos para los enlaces dentro del mensaje */
+.woocommerce-message a, .woocommerce-info a {
+    color: #c1ff72 !important; /* Enlaces en verde claro */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.woocommerce-message::before, .woocommerce-info::before, .woocommerce-error::before {
+    display: none !important; /* Oculta el icono */
+}
